@@ -16,9 +16,7 @@ const ManagementSection = () => {
               <div className="p-4 rounded-full bg-accent text-accent-foreground">
                 <Crown size={36} />
               </div>
-              <h2 className={`font-heading text-4xl md:text-5xl font-bold text-foreground ${
-                isRTL ? 'text-right' : 'text-left'
-              }`}>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground text-center">
                 {t.management.title}
               </h2>
             </div>

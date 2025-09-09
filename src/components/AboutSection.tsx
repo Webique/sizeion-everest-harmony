@@ -10,9 +10,7 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className={`font-heading text-4xl md:text-5xl font-bold text-center mb-8 text-foreground ${
-            isRTL ? 'text-right' : 'text-left'
-          }`}>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-8 text-foreground">
             {t.about.title}
           </h2>
           

@@ -65,9 +65,7 @@ const DepartmentsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className={`font-heading text-4xl md:text-5xl font-bold mb-6 text-primary-foreground ${
-              isRTL ? 'text-right' : 'text-left'
-            }`}>
+            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-primary-foreground text-center">
               {t.departments.title}
             </h2>
             
@@ -89,15 +87,11 @@ const DepartmentsSection = () => {
                   </div>
                 </div>
                 
-                <h3 className={`font-heading text-xl font-semibold mb-3 text-foreground ${
-                  isRTL ? 'text-right' : 'text-left'
-                }`}>
+                <h3 className="font-heading text-xl font-semibold mb-3 text-foreground text-center">
                   {dept.title}
                 </h3>
                 
-                <p className={`text-muted-foreground leading-relaxed ${
-                  isRTL ? 'text-right' : 'text-left'
-                }`}>
+                <p className="text-muted-foreground leading-relaxed text-center">
                   {dept.description}
                 </p>
               </div>

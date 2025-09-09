@@ -2,7 +2,8 @@ import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { translations } from './translations';
 import { Button } from './ui/button';
-import { Phone, Mail, MapPin, FileText, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, FileText } from 'lucide-react';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const ContactSection = () => {
   const { language, isRTL } = useLanguage();
@@ -36,9 +37,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className={`font-heading text-4xl md:text-5xl font-bold mb-6 text-primary-foreground ${
-              isRTL ? 'text-right' : 'text-left'
-            }`}>
+            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-primary-foreground text-center">
               {t.contact.title}
             </h2>
             
@@ -67,7 +66,7 @@ const ContactSection = () => {
                         {info.label}
                       </h3>
                       {info.values.map((value, valueIndex) => (
-                        <p key={valueIndex} className="text-muted-foreground">
+                        <p key={valueIndex} className="text-muted-foreground" dir="ltr">
                           {value}
                         </p>
                       ))}
@@ -111,8 +110,8 @@ const ContactSection = () => {
                   className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   onClick={() => window.open('https://twitter.com/sizeion', '_blank')}
                 >
-                  <MessageCircle className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-                  {language === 'en' ? 'Follow on Twitter' : 'تابعنا على تويتر'}
+                  <FaXTwitter className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
+                  {language === 'en' ? 'Follow on X' : 'تابعنا على X'}
                 </Button>
               </div>
               

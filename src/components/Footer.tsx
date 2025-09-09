@@ -33,7 +33,7 @@ const Footer = () => {
                 : 'التميز الفندقي الدولي منذ عام 2017'}
             </p>
             <p className="text-sm text-background/60">
-              {t.contact.crn}: 1010803925
+              {t.contact.crn}: <span dir="ltr">1010803925</span>
             </p>
           </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <Phone size={16} className="text-regal-sand flex-shrink-0" />
-                <div className="text-sm text-background/80">
+                <div className="text-sm text-background/80" dir="ltr">
                   <div>+966 566056630</div>
                   <div>+966 535656505</div>
                 </div>
@@ -72,7 +72,7 @@ const Footer = () => {
               
               <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <Mail size={16} className="text-regal-sand flex-shrink-0" />
-                <div className="text-sm text-background/80">
+                <div className="text-sm text-background/80" dir="ltr">
                   ff.566@outlook.com
                 </div>
               </div>

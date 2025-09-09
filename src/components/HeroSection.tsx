@@ -26,9 +26,10 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className={`font-heading text-5xl md:text-7xl font-bold mb-6 leading-tight ${
-            isRTL ? 'text-right' : 'text-left'
-          }`}>
+          <h1 
+            className="font-heading text-5xl md:text-7xl font-bold mb-6 text-center leading-tight"
+            style={isRTL ? { lineHeight: '1.4' } : {}}
+          >
             {t.hero.headline}
           </h1>
           
@@ -53,7 +54,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-full"
+              className="border-white text-white bg-black/20 hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-full"
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             >
               {t.hero.learnMore}

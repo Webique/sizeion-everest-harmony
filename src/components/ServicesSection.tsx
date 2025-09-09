@@ -65,7 +65,7 @@ const ServicesSection = () => {
                   }`}>
                     <service.icon size={32} />
                   </div>
-                  <h2 className={`font-heading text-3xl md:text-4xl font-bold ${
+                  <h2 className={`font-heading text-3xl md:text-4xl font-bold text-center ${
                     service.bgClass === 'section-band' 
                       ? 'text-primary-foreground' 
                       : 'text-foreground'
