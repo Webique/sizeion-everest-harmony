@@ -165,4 +165,15 @@ Brand Colors: Jet Black (#000000), Regal Sand (#8E895F), Deep Teal (#114054)
   .gradient-accent {
     background: var(--gradient-accent);
   }
+  
+  /* Hero Background - Fixed on desktop, scroll on mobile */
+  .hero-bg {
+    background-attachment: scroll;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-bg {
+      background-attachment: fixed;
+    }
+  }
 }

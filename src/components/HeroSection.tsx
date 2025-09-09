@@ -12,12 +12,11 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center text-white overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center text-white overflow-hidden hero-bg"
       style={{
         backgroundImage: `url(${heroImage})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundPosition: 'center'
       }}
     >
       {/* Overlay */}
