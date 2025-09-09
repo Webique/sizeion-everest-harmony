@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { translations } from './translations';
+import aboutImage1 from '@/assets/about.jpg';
+import aboutImage2 from '@/assets/about1.jpg';
 
 const AboutSection = () => {
   const { language, isRTL } = useLanguage();
@@ -43,6 +45,24 @@ const AboutSection = () => {
               <div className="text-muted-foreground font-medium">
                 {language === 'en' ? 'Excellence' : 'التميز'}
               </div>
+            </div>
+          </div>
+          
+          {/* About Images */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+            <div className="luxury-card overflow-hidden">
+              <img
+                src={aboutImage1}
+                alt="Luxury hotel interior showcasing elegant design and sophisticated ambiance"
+                className="w-full h-64 object-cover transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+            <div className="luxury-card overflow-hidden">
+              <img
+                src={aboutImage2}
+                alt="Grand hotel hallway with ornate carpet and classical architectural details"
+                className="w-full h-64 object-cover transition-transform duration-700 hover:scale-105"
+              />
             </div>
           </div>
         </div>
